@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/learn_spacing_standard"
+        android:layout_marginEnd="@dimen/learn_spacing_middle"
+        android:layout_marginStart="@dimen/learn_spacing_middle"
+        android:layout_marginBottom="@dimen/learn_spacing_standard">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivLock"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/learn_ic_lock"
+                android:layout_marginStart="@dimen/learn_spacing_medium"
+                android:paddingTop="@dimen/learn_spacing_control_half"
+                android:padding="@dimen/_14sdp"
+                android:background="@drawable/learn_bg_circle_white"
+                android:backgroundTint="@color/learn_mettal_grey"
+                />
+
+            <ImageView
+                android:id="@+id/ivMedal"
+                android:visibility="gone"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/learn_ic_crown"
+                android:layout_marginStart="@dimen/learn_spacing_medium"
+                android:paddingTop="@dimen/learn_spacing_control_half"
+                android:padding="@dimen/learn_spacing_standard"
+                android:background="@drawable/learn_bg_circle_white"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:layout_marginTop="@dimen/learn_spacing_control"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvAchievementName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/learn_textColorPrimary"
+                android:textStyle="bold"
+                android:textAppearance="@style/LearnerFontSemiBold"
+                android:textSize="@dimen/learn_font_size_normal"
+                android:text="@string/learn_lbl_locked_badge"/>
+            <TextView
+                android:id="@+id/tvAchievementComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/learn_spacing_control"
+                android:textColor="@color/learn_textColorSecondary"
+                android:textSize="@dimen/learn_font_size_normal"
+                android:text="@string/learn_lbl_unlock_to_see_details"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

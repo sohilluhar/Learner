@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <TextView
+       android:id="@+id/tvReceiver"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/learn_bg_chat_history"
+       android:backgroundTint="@color/learn_gradient_grey_1"
+       android:paddingTop="@dimen/learn_spacing_middle"
+       android:paddingBottom="@dimen/learn_spacing_middle"
+       android:paddingStart="@dimen/learn_spacing_standard_new"
+       android:paddingEnd="@dimen/learn_spacing_standard_new"
+       android:text=""
+       android:textAppearance="@style/LearnerFontMedium"
+       android:visibility="invisible"
+       android:textColor="@color/learn_textColorPrimary"
+       android:textSize="@dimen/learn_font_size_normal"
+       android:layout_marginEnd="@dimen/learn_spacing_xxxlarge"
+       android:layout_marginBottom="@dimen/learn_spacing_standard"
+       android:layout_marginStart="@dimen/learn_spacing_standard_new"/>
+    <TextView
+        android:id="@+id/tvSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:textAppearance="@style/LearnerFontMedium"
+        android:background="@drawable/learn_bg_chat_history"
+        android:backgroundTint="@color/learn_colorPrimary"
+        android:paddingTop="@dimen/learn_spacing_middle"
+        android:paddingBottom="@dimen/learn_spacing_middle"
+        android:paddingStart="@dimen/learn_spacing_standard_new"
+        android:paddingEnd="@dimen/learn_spacing_standard_new"
+        android:textColor="@color/learn_textColorPrimary"
+        android:textSize="@dimen/learn_font_size_normal"
+        android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+        android:layout_marginBottom="@dimen/learn_spacing_control"
+        android:layout_marginStart="@dimen/learn_spacing_xxxlarge"/>
+
+</RelativeLayout>

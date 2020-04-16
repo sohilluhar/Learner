@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/learn_spacing_standard"
+    android:layout_marginEnd="@dimen/learn_spacing_standard"
+    android:layout_marginStart="@dimen/learn_spacing_standard"
+    android:layout_marginBottom="@dimen/learn_spacing_standard">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cardImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <com.iqonic.learnerapp.utils.LearnerCircleImageView
+            android:id="@+id/ivUserPending"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/learn_walk_1"
+            />
+        <View
+            android:id="@+id/viewStatusPending"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/learn_circle_dot"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/cardImg"
+        android:layout_marginStart="@dimen/learn_spacing_standard_new"
+        android:layout_marginTop="@dimen/learn_spacing_control"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvUserNamePending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textStyle="bold"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:text="@string/learn_lbl_marc_elliot"/>
+        <TextView
+            android:id="@+id/tvMutual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/learn_spacing_control"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textSize="@dimen/learn_font_size_medium"
+            android:text="@string/learn_lbl_economy"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/learn_spacing_standard"
+        >
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/learner_ic_fab_back"
+            android:src="@drawable/learn_ic_close_black"
+            android:tint="@color/learn_colorPrimary_light"
+            android:layout_marginTop="@dimen/learn_spacing_control_half"
+            android:layout_marginEnd="@dimen/learn_spacing_standard"
+            android:elevation="@dimen/learn_spacing_control"
+            android:padding="@dimen/learn_spacing_standard" />
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/learner_ic_fab_back"
+            android:src="@drawable/learn_ic_check_mark"
+            android:tint="@color/learn_white"
+            android:layout_marginTop="@dimen/learn_spacing_control_half"
+            android:elevation="@dimen/learn_spacing_control"
+            android:backgroundTint="@color/learn_colorPrimary"
+            android:padding="@dimen/learn_spacing_middle" />
+
+
+    </LinearLayout>
+</RelativeLayout>

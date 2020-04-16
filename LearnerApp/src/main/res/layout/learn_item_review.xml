@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/learn_shadoe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/learn_spacing_standard_new">
+
+        <com.iqonic.learnerapp.utils.LearnerCircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/learn_walk_1" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_toStartOf="@id/tvTime"
+            style="@style/LearnHeadingBig"
+            android:textSize="@dimen/learn_font_size_large"
+            android:layout_toEndOf="@id/ivProfile"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:textStyle="bold"
+            android:text="@string/learn_lbl_nimasha_perara" />
+
+        <TextView
+            android:id="@+id/tvStartNewChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:layout_toEndOf="@id/ivProfile"
+            android:gravity="center_vertical"
+            android:padding="@dimen/learn_spacing_control_half"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:text="@string/learn_lbl_student" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:text="@string/learn_lbl__2w_ago" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/learn_gradient_grey_1"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="5"
+        android:progressTint="@color/learn_yellow"
+        android:scaleX="0.75"
+        android:scaleY=".7"
+        android:layout_marginStart="@dimen/_minus8sdp"
+
+        />
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/learn_spacing_standard"
+        android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+        android:textSize="@dimen/learn_font_size_normal"
+        android:textColor="@color/learn_textColorPrimary"
+        android:textAppearance="@style/LearnerFontMedium"
+        android:lines="3"
+        android:layout_marginStart="@dimen/learn_spacing_standard_new"
+        android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+        android:lineSpacingExtra="@dimen/learn_spacing_control"
+        android:text="@string/learn_samplelong_text" />
+
+</LinearLayout>

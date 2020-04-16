@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlContent"
+    android:background="@color/learn_color_light_yellow"
+    android:paddingStart="@dimen/learn_spacing_standard_new"
+    android:paddingEnd="@dimen/learn_spacing_standard_new"
+    android:paddingTop="@dimen/learn_spacing_middle"
+    android:paddingBottom="@dimen/learn_spacing_middle">
+
+    <com.iqonic.learnerapp.utils.LearnerCircleImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/learn_walk_1" />
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/ivUser"
+        android:layout_marginStart="@dimen/learn_spacing_large"
+        android:layout_marginTop="@dimen/learn_spacing_control_half"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textStyle="bold"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:textSize="@dimen/learn_font_size_normal"
+            tools:text="Marc Elliot" />
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/learn_spacing_control_half"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textSize="@dimen/learn_font_size_medium"
+            tools:text="Economy" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLeaderBoardNumber"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:text="1"
+        android:textAppearance="@style/LearnerFontBold"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/learn_white"
+        android:textSize="@dimen/learn_font_size_large"
+        android:background="@drawable/learn_bg_circle_stroked" />
+
+</RelativeLayout>

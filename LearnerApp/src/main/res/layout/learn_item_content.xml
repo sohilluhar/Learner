@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/learn_spacing_standard"
+    android:paddingStart="@dimen/learn_spacing_large"
+    android:paddingEnd="@dimen/learn_spacing_large"
+    android:paddingTop="@dimen/learn_spacing_middle"
+    android:paddingBottom="@dimen/learn_spacing_standard_new">
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/learn_font_size_normal"
+        android:textColor="@color/learn_textColorSecondary"
+        android:textAppearance="@style/LearnerFontBold"
+        android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+        android:text="1" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tvFeatureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/learn_font_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textAppearance="@style/LearnerFontBold"
+            tools:text="@string/learn_lbl_introduction" />
+        <TextView
+            android:id="@+id/tvsubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textAppearance="@style/LearnerFontMedium"
+            android:layout_marginEnd="@dimen/learn_spacing_control"
+            tools:text="About this course and overview" />
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textColor="@color/learn_textColorGrey"
+            tools:text="Video" />
+
+    </LinearLayout>
+
+</LinearLayout>

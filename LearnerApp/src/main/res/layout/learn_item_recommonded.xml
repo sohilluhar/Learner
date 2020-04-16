@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/learn_spacing_standard"
+    android:layout_marginBottom="@dimen/learn_spacing_standard">
+    <com.iqonic.learnerapp.utils.LearnerCircleImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/learn_walk_1"
+        />
+</LinearLayout>

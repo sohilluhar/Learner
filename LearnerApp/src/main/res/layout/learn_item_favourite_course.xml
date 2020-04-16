@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/learn_shadoe"
+    android:layout_marginBottom="@dimen/learn_spacing_standard">
+    <com.iqonic.learnerapp.utils.LearnerCircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/learn_walk_1"
+        android:layout_margin="@dimen/_12sdp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        >
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/ivHeart"
+            style="@style/LearnHeadingBig"
+            android:textSize="@dimen/learn_font_size_normal"
+            android:textStyle="bold"
+            tools:text="Project Management" />
+
+        <TextView
+            android:id="@+id/tvStartNewChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:gravity="center_vertical"
+            android:padding="@dimen/learn_spacing_control_half"
+            android:textSize="@dimen/learn_font_size_medium"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textAppearance="@style/LearnerFontMedium"
+            android:layout_marginEnd="@dimen/learn_spacing_large"
+            tools:text="Management" />
+
+        <ImageView
+            android:id="@+id/ivHeart"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/learn_ic_like"
+            android:gravity="center_vertical"
+            android:padding="@dimen/learn_spacing_medium"
+             />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tvStartNewChat"
+            android:layout_marginTop="@dimen/learn_spacing_standard"
+            android:background="@color/learn_gradient_grey_1"/>
+       <LinearLayout
+           android:layout_below="@id/view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/_12sdp"
+           android:layout_marginTop="@dimen/learn_spacing_standard">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/tvStudentCount"
+                   style="@style/LearnHeadingBig"
+                   android:textSize="@dimen/learn_font_size_normal"
+                   android:textStyle="bold"
+                   tools:text="200" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/learn_font_size_small"
+                   android:textColor="@color/learn_textColorSecondary"
+                   android:textAppearance="@style/LearnerFontMedium"
+                   android:text="@string/learn_lbl_students" />
+           </LinearLayout>
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/learn_spacing_standard_new">
+               <TextView
+                   android:id="@+id/tvLecturesCount"
+                   style="@style/LearnHeadingBig"
+                   android:textSize="@dimen/learn_font_size_normal"
+                   android:textStyle="bold"
+                   tools:text="200" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:textSize="@dimen/learn_font_size_small"
+                   android:textColor="@color/learn_textColorSecondary"
+                   android:textAppearance="@style/LearnerFontMedium"
+                   android:text="@string/learn_lbl_lectures" />
+           </LinearLayout>
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginBottom="@dimen/learn_spacing_control_half">
+               <TextView
+                   android:id="@+id/tvPrice"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:layout_gravity="bottom|end"
+                   android:background="@drawable/learn_bg_ract_4dp"
+                   android:paddingTop="@dimen/learn_spacing_control"
+                   android:paddingBottom="@dimen/learn_spacing_control"
+                   android:paddingEnd="@dimen/learn_spacing_standard"
+                   android:paddingStart="@dimen/learn_spacing_standard"
+                   android:textSize="@dimen/learn_font_size_small"
+                   android:textColor="@color/learn_white"
+                   android:textStyle="bold"
+                   android:singleLine="true"
+                   android:textAppearance="@style/LearnerFontSemiBold"
+                   android:text="@string/learn_lbl_30_80" />
+
+           </FrameLayout>
+
+
+       </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

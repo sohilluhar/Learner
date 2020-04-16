@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Learner.iml" filepath="$PROJECT_DIR$/Learner.iml" group="Learner" />
+      <module fileurl="file://$PROJECT_DIR$/LearnerApp/LearnerApp.iml" filepath="$PROJECT_DIR$/LearnerApp/LearnerApp.iml" group="Learner/LearnerApp" />
+      <module fileurl="file://$PROJECT_DIR$/Learning-UI-Kit.iml" filepath="$PROJECT_DIR$/Learning-UI-Kit.iml" />
+    </modules>
+  </component>
+</project>

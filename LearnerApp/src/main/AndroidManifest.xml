@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iqonic.learnerapp">
+
+    <application
+        android:name=".LearnerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.LearnSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LearnCongratulationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnCourseDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnInstructorDetailActivity"
+            android:label="@string/title_activity_learn_instructor_detail"
+            android:theme="@style/LearnerAppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LearnMyFriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnAchivementsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnFavouriteCoursesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnOngoingCourseDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnFriendDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnContentDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme" />
+        <activity
+            android:name=".activities.LearnerDashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.LearnerWalkThroughActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LearnerAppTheme"/>
+
+    </application>
+
+</manifest>
